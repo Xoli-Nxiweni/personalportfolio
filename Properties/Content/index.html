@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Properties/Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/Properties/imgs/xoli_AI.png" type="image/png">
+    <script src="/Properties/Function/script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Xoli's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="nav-toggle">
+        <div class="logo"><a href="index.html">< X O _/ ></a></div>
+        <ul class="links">
+            <li><a href="#" class=""><i class="fa fa-home"></i>home</a></li>
+            <li><a href="#services"><i class="fa fa-cogs"></i>services</a></li>
+            <li><a href="#Portfolio"><i class="fa fa-file-code-o"></i>portfolio</a></li>
+            <li><a href="#Projects"><i class="fa fa-book"></i>projects</a></li>
+        </ul>
+        <label for="nav-toggle" class="toggleBar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+    </nav>
+    <section class="index-section">
+        <div class="index-div">
+            <h1>Hello, I am Xoli Nxiweni</h1>
+            <p>A <span class="effect"></span></p>
+        <p class="box"><strong><span></span></strong>I consider myself similar to a Spider, because I work as a Web Developer.</p>
+        
+        <div class="buttons">
+            <button class="btn" id="showPopup">Hire Me</button>
+            <div id="contactPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close" id="closePopup">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    </span>
+                    <h2><span>Contact</span> Me</h2>
+                    <form action="https://formspree.io/f/xaygrpwa" method="post">
+                        <input type="text" placeholder="Name" class="input" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed">
+                        <input type="email" placeholder="Email" class="input" name="_replyto" required>
+                        <textarea placeholder="Message" class="textarea" name="message" required></textarea>
+                        <input type="text" name="_subject" value="New Contact Form Submission" hidden>
+                        <button type="submit" class="button" id="submit-btn">Submit</button>
+                      </form>
+                    
+                </div>
+            </div>
+            <a><input type="button" value="My Resume" class="btn" onclick="showModal()"></a>
+
+<!-- Modal -->
+<div id="resumeModal">
+    <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+        border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+            src="https://www.canva.com/design/DAF2krkyXao/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+    </div>
+    <a href="https://www.canva.com/design/DAF2krkyXao/view?utm_content=DAF2krkyXao&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+    <a><input type="button" value="Close" class="btn" onclick="closeModal()"></a>
+</div>
+
+<!-- Overlay background -->
+<div id="overlay" onclick="closeModal()"></div>
+        </div>
+        </div>
+        <div class="image-div">
+            <img src="/Properties/imgs/Build-Custom-Web-Apps.png" class="image">
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1><span class="effect2"></span>|</h1>
+        <div class="sevContainer">
+            <div class="myServicesImage">
+                <img class="horse" src="/Properties/imgs/More X AI.png">
+            </div>
+            <div class="myServicesText">
+                <div class="service-header">
+                    <h3><span><a id="click1" onclick="infoReveal('revealText1', this)" class="active">About Me</a></span></h3>
+                    <h3><span><a id="click2" onclick="infoReveal('revealText2', this)">My Achievements</a></span></h3>
+                    <h3><span><a id="click3" onclick="infoReveal('revealText3', this)">My Services</a></span></h3>
+                </div>
+                <div class="revealText" id="revealText1">
+    <!-- <p>I am a Software Engineer with 2+ years of experience in Systems Development, specializing in web application development.</p>
+    <p>In addition to my technical expertise, I am:</p> -->
+    <ul>
+        <li><i class='bx bxs-right-arrow-circle'></i>Passionate about innovative solutions</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Quick learner and adaptable to new technologies</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Effective problem solver and analytical thinker</li>
+    </ul>
+    <p>My professional roles include:</p>
+    <ul>
+        <li><i class='bx bxs-right-arrow-circle'></i>Software Engineer</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Web Developer</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>LOGO Designer</li>
+    </ul>
+    <p>Outside of work, I enjoy:</p>
+    <ul>
+        <li><i class='bx bxs-right-arrow-circle'></i>Exploring new technologies and coding projects</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Engaging in creative design activities</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Contributing to open-source projects</li>
+    </ul>
+</div>
+
+<div class="revealText" id="revealText2">
+    <ul>
+        <li><i class='bx bxs-right-arrow-circle'></i>OCA Java SE 8</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure Fundamentals</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure Data Fundamentals</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Systems Development NQF L4</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Systems Development NQF L5 <Span class="red">(PENDING)</Span></li>
+    </ul>
+</div>
+
+<div class="revealText" id="revealText3">
+    <ul>
+        <li><i class='bx bxs-right-arrow-circle'></i>As a Java programmer, I have a passion for creating real-world solutions.</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>I'm equipped with strong front-end skills using HTML, CSS, and JavaScript.</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Additionally, I hold two Microsoft certifications for Azure cloud computing.</li>
+    </ul>
+    <p>This empowers me to provide comprehensive services encompassing:</p>
+    <ul>
+        <li><i class='bx bxs-right-arrow-circle'></i>Custom software development</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Web application development</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Cloud-based application development</li>
+        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure cloud computing consulting</li>
+    </ul>
+</div>
+
+    </div>
+</section>
+<section class="Portfolio" id="Portfolio">
+    <h1>My Portfolio</h1>
+    <div class="portfolioContainers">
+        <div class="leftContainer">
+            <h3><i class='bx bxs-graduation'></i> Education</h3>
+            <ul>
+                <li><i class='bx bxs-right-arrow-circle'></i> <span> National Senior Certificate</span></li>
+                <li><i class='bx bx-chevrons-right' ></i> <span>Lamula J.Secondary School 2011 - 2016</span></li>
+                <li><i class='bx bxs-right-arrow-circle'></i> <span> Systems Development NQF Level 4</span></li>
+                <li><i class='bx bx-chevrons-right' ></i> <span>DynamicDNA 2022 - 2023 </span></li>
+                <li><i class='bx bxs-right-arrow-circle'></i> <span> Systems Development NQF Level 5</span></li>
+                <li><i class='bx bx-chevrons-right' ></i> <span>DynamicDNA 2023 - Present </span></li>
+            </ul>
+        </div>
+        <div class="midContainer">
+            <h3><i class='bx bxs-smile'></i> Soft Skills</h3>
+            <ul>
+                <li><i class='bx bxs-right-arrow-circle'></i> Adaptive</li>
+                <li><i class='bx bxs-right-arrow-circle'></i> Problem Solving</li>
+                <li><i class='bx bxs-right-arrow-circle'></i> Team Player</li>
+                <li><i class='bx bxs-right-arrow-circle'></i> Good Communication Skills</li>
+                <li><i class='bx bxs-right-arrow-circle'></i> Positive Attitude</li>
+                <li><i class='bx bxs-right-arrow-circle'></i> Time Management</li>
+            </ul>
+        </div>
+        <div class="rightContainer">
+            <h3><i class='bx bx-code-alt'></i> Technical Skills</h3>
+            <ul>
+                <li><i class='bx bxs-right-arrow-circle'></i> <span>Computer Programming</span></li>
+                <li><i class='bx bxs-right-arrow-circle'></i> <span>Web Technologies</span></li>
+                <li><i class='bx bxs-right-arrow-circle'></i> <span>Web based platforms version control</span></li>
+                <li><i class='bx bxs-right-arrow-circle'></i> <span>Database Management</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="Languages">
+        <h1>Languages</h1>
+        <div class="LanguageContainers">
+            <div class="firstContainer">
+                <img src="https://img.icons8.com/?size=50&id=20909&format=png" alt="">
+                 <h3>HTML</h3>
+               
+                <p>Moderate</p>
+                <p>Proficiency: <span id="scalePercentage1">80%</span></p>
+                <br>
+                 <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar1" value="Scale" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="secondContainer">
+                     <img src="https://img.icons8.com/?size=50&id=21278&format=png" alt="">
+                      <h3>CSS</h3>
+               
+                      <p>Profound understanding</p>
+                      <p>Proficiency: <span id="scalePercentage2">88%</span></p>
+                      <br>
+                       <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar2" style="width: 65%;"></div>
+                    </div>
+            </div>
+            <div class="thirdContainer">
+                      <img src="https://img.icons8.com/?size=50&id=108784&format=png" alt="">
+                      <h3>JavaScript</h3>
+
+                      <p>Need to improve understanding</p>
+                      <p>Proficiency: <span id="scalePercentage3">42%</span></p>
+                       <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar3" style="width: 65%;"></div>
+                    </div>
+            </div>
+            <div class="thirdContainer">
+                      <img src="https://img.icons8.com/?size=50&id=13679&format=png" alt="">
+                      <h3>Java</h3>
+               
+                      <p>OCA Java SE 8</p>
+                      <p>Proficiency: <span id="scalePercentage4">84%</span></p>
+                      <br>
+                       <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar4" style="width: 65%;"></div>
+                    </div>
+            </div>
+            <div class="thirdContainer">
+                <img src="https://img.icons8.com/?size=50&id=Fycm8TUhWmFU&format=png" alt="">
+                <h3>C#</h3>
+                <p>Fundamental Understanding</p>
+                <br>
+                <p>Proficiency: <span id="scalePercentage5">78%</span></p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar5" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="thirdContainer">
+                <img src="https://img.icons8.com/?size=80&id=Lk9yC4HS5r3p&format=png" alt="">
+                <h3>SQL</h3>
+                <p>Still Learning</p>
+                <p>Proficiency: <span id="scalePercentage6">38%</span></p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar6" style="width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="environments">
+        <h1>Environments</h1>
+        <div class="environmentsContainers">
+            <div class="firstContainer">
+                 <img src="https://img.icons8.com/?size=80&id=9OGIyU8hrxW5&format=png" alt="">
+                 <h3>Visual Studio Code</h3>
+               
+                <!-- <p>Adequate and profound understanding</p>
+                <p>Proficiency: <span id="scalePercentage1">80%</span></p>
+    
+                 <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar1" value="Scale" style="width: 65%;"></div>
+                </div> -->
+            </div>
+            <div class="fourthContainer">
+                <img src="https://img.icons8.com/?size=80&id=y7WGoWNuIWac&format=png" alt="">
+                <h3>Visual Studio</h3>
+         
+                <!-- <p>OCA Java SE 8 <br>Certified</p>
+                <p>Proficiency: <span id="scalePercentage4">84%</span></p>
+                 <div class="progress-bar-container">
+                  <div class="progress-bar" id="progressBar4" style="width: 65%;"></div>
+              </div> -->
+      </div>
+            <div class="secondContainer">
+                      <img src="https://img.icons8.com/?size=80&id=61466&format=png" alt="">
+                      <h3>IntelliJ Idea</h3>
+               
+                      <!-- <p>Adequate and profound understanding</p>
+                      <p>Proficiency: <span id="scalePercentage2">88%</span></p>
+                       <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar2" style="width: 65%;"></div>
+                    </div> -->
+            </div>
+            <div class="thirdContainer">
+                     <img src="https://img.icons8.com/?size=80&id=VLKafOkk3sBX&format=png" alt="">
+                      <h3>Azure Portal</h3>
+
+                      <!-- <p>Adequate and profound understanding</p>
+                      <p>Proficiency: <span id="scalePercentage3">50%</span></p>
+                       <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar3" style="width: 65%;"></div>
+                    </div> -->
+            </div>
+            <div class="fourthContainer"> 
+                <img src="https://img.icons8.com/?size=80&id=iWw83PVcBpLw&format=png" alt="">
+                <h3>Canva</h3>
+         
+                <!-- <p>OCA Java SE 8 <br>Certified</p>
+                <p>Proficiency: <span id="scalePercentage4">84%</span></p>
+                 <div class="progress-bar-container">
+                  <div class="progress-bar" id="progressBar4" style="width: 65%;"></div>
+              </div> -->
+      </div>
+            <div class="fourthContainer"> 
+                <img src="https://img.icons8.com/?size=80&id=zfHRZ6i1Wg0U&format=png" alt="">
+                <h3>Figma</h3>
+         
+                <!-- <p>OCA Java SE 8 <br>Certified</p>
+                <p>Proficiency: <span id="scalePercentage4">84%</span></p>
+                 <div class="progress-bar-container">
+                  <div class="progress-bar" id="progressBar4" style="width: 65%;"></div>
+              </div> -->
+      </div>
+            <div class="fourthContainer"> 
+                <img src="https://img.icons8.com/?size=80&id=62856&format=png" alt="">
+                <h3>Github</h3>
+         
+                <!-- <p>OCA Java SE 8 <br>Certified</p>
+                <p>Proficiency: <span id="scalePercentage4">84%</span></p>
+                 <div class="progress-bar-container">
+                  <div class="progress-bar" id="progressBar4" style="width: 65%;"></div>
+              </div> -->
+      </div>
+            <div class="fourthContainer"> 
+                <img src="https://img.icons8.com/?size=80&id=laYYF3dV0Iew&format=png" alt="">
+                <h3>Microsoft SQL Server Manager</h3>
+         
+                <!-- <p>OCA Java SE 8 <br>Certified</p>
+                <p>Proficiency: <span id="scalePercentage4">84%</span></p>
+                 <div class="progress-bar-container">
+                  <div class="progress-bar" id="progressBar4" style="width: 65%;"></div>
+              </div> -->
+      </div>
+        </div>
+    </div>
+</section>
+
+<section class="Projects" id="Projects">
+    <h1>My Projects</h1>
+    <div class="ProjectsContainer">
+       <div class="ProjectsContent">
+        <img src="/Properties/imgs/Project_1.png" alt="">
+        <h3>Personal Portfolio</h3>
+        <p>Created my debut web portfolio featuring a dynamic Weather App. Utilizing HTML, CSS, and JS, users can input their preferred city to instantly access accurate weather conditions. This project showcases my proficiency in web development and enthusiasm for creating engaging, functional interfaces.</p>
+        <input type="button" value="View Project" onclick="window.open('https://xolinxiweniresume.netlify.app/', '_blank')">
+       </div>
+       <div class="ProjectsContent">
+        <img src="/Properties/imgs/Project_2.png" alt="">
+        <h3>Collaborated Portfolio</h3>
+        <p>As a dynamic duo, we revamped the website's landing page using our HTML, CSS, and JavaScript expertise. The collaborative effort resulted in an engaging user experience. The redesigned page showcases intuitive navigation and visually striking elements, embodying our commitment to a seamless and interactive online presence.</p>
+        <input type="button" value="View Project" onclick="window.open('https://ambitious-meadow-01ec35d10.4.azurestaticapps.net//', '_blank')">
+       </div>
+       <div class="ProjectsContent">
+        <img src="/Properties/imgs/Project_Java.png" alt="">
+        <h3>Java Calculator App</h3>
+        <p>
+            This robust Java application adheres to established coding principles and utilizes comprehensive exception handling. This ensures stability, predictability, and minimizes unexpected disruptions, resulting in a reliable and resilient experience for users.</p>
+        <input type="button" value="View Repository" onclick="window.open('https://github.com/Xoli-Nxiweni/Java-Calculator-App/', '_blank')">
+       </div>
+       <div class="ProjectsContent">
+        <img src="/Properties/imgs/Logo_1.png" >
+        <h3>Reality Trading Logo</h3>
+        <p>A sleek emblem, artfully designed for a forex powerhouse, effortlessly commands attention in the financial realm. Balancing simplicity and allure, this symbol speaks volumes, propelling the establishment into the spotlight. A visual testament to excellence, ensuring instant recognition and solidifying its status in the dynamic world of finances.</p>
+        <button id="openImageButton" onclick="openImage()">View Project</button>
+       </div>
+       <!-- <div class="ProjectsContent">
+        <img src="" alt="">
+        <h3>File Name</h3>
+        <p>Description</p>
+        <input type="button" value="View Project" onclick="window.open('https://webpage.com/', '_blank')">
+       </div>
+       <div class="ProjectsContent">
+        <img src="" alt="">
+        <h3>File Name</h3>
+        <p>Description</p>
+        <input type="button" value="View Project" onclick="window.open('https://webpage.com/', '_blank')">
+       </div> -->
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+            <div class="logo"><a href="index.html"><h1>< X O _/ ></X></h1></a></div>
+          <p class="mb-3">
+            Looking forward to hearing from you in any way possible, thank you for your time!
+          </p>
+        </div>
+  
+        <div class="col-md-4">
+          <h3 class="footer-title">Contact</h3>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span>Meadowlands Soweto</span>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <a href="tel:+27 61 751 4638">Call Me</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:xolinxiweni@gmail.com">E-Mail Me</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4">
+          <h3 class="footer-title">Socials</h3>
+          <ul class="list-inline social-media">
+
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/xoli-nxiweni-a01602221/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/Xoli-Nxiweni">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://wa.me/0617514638">
+                <i class="fa fa-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="Footer-P">&copy; 2023 Personal Project. All rights reserved. | Designed by Xoli Nxiweni.</p>
+  </footer>
+  
+    <script>
+
+    </script>
+    <div class="scroll-upButton" id="scrollup-Btn">
+        <div class="upButton"><a href="#"><i class='bx bxs-chevron-up' ></i></a></div>
+    </div>
+</body>
+</html>
