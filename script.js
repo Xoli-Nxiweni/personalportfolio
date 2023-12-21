@@ -90,7 +90,7 @@ var typed = new Typed(".effect", {
 var typed2 = new Typed(".effect2", {
   strings: ["About Me.", 
   "About Me.", 
-  "My Passion.", 
+  "My Achievements.", 
   "My Services.",],
   loop: true,
   typeSpeed: 90,
@@ -115,7 +115,7 @@ closePopupButton.addEventListener("click", function () {
 });
 
 // Add event listener to close the form when clicking outside
-document.body.addEventListener("click", function (event) {
+document.body.addEventListener('click', function (event) {
     // Check if the click is outside the form
     if (!contactPopup.contains(event.target) && event.target !== showPopupButton) {
         contactPopup.style.display = "none";
@@ -187,7 +187,7 @@ function updateProgressBar(scalePercentageId, progressBarId) {
     });
     function openImage() {
       // Replace 'path/to/your/image.jpg' with the actual path to your image
-      var imageUrl = '/Properties/imgs/Logo.png';
+      var imageUrl = 'Properties/imgs/Logo.png';
 
       // Open the image in a new tab
       window.open(imageUrl, '_blank');
