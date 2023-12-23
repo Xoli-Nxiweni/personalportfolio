@@ -56,10 +56,10 @@
                     <div class="bar"></div>
                     </span>
                     <h2><span>Contact</span> Me</h2>
-                    <form action="https://formspree.io/f/xaygrpwa" method="post">
-                        <input type="text" placeholder="Name" class="input" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed">
-                        <input type="email" placeholder="Email" class="input" name="_replyto" required>
-                        <textarea placeholder="Message" class="textarea" name="message" required></textarea>
+                    <form action="https://formspree.io/f/xaygrpwa" method="post" id="myForm">
+                        <input type="text" placeholder="Name" id="nameInput" class="input" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed">
+                        <input type="email" placeholder="Email" id="emailInput" class="input" name="_replyto" required>
+                        <textarea placeholder="Message" id="textarea" name="message" class="textarea" required></textarea>
                         <input type="text" name="_subject" value="New Contact Form Submission" hidden>
                         <button type="submit" class="button" id="submit-btn">Submit</button>
                       </form>
@@ -400,7 +400,7 @@
         </div>
   
         <div class="col-md-4">
-          <h3 class="footer-title">Contact</h3>
+          <!-- <h3 class="footer-title">Contact</h3> -->
           <ul class="list-unstyled">
             <li>
               <i class="fa fa-map-marker"></i>

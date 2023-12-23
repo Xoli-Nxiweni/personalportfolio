@@ -18,39 +18,6 @@ navLinks.forEach(link => {
   link.addEventListener('click', closeMobileNav)
 });
 
-//trying the active effect on navigation bar
-// function anchorsAct(elementId, clickedLink) {
-
-//   // Remove 'active' class from all links
-//   const allLinks = document.querySelectorAll('.links a');
-//   allLinks.forEach(link => {
-//       link.classList.remove('active');
-//   });
-
-//   // Add 'active' class to the clicked link
-//   if (clickedLink) {
-//       clickedLink.classList.add('active');
-//   }
-// };
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var links = document.querySelectorAll('.links a');
-
-//   links.forEach(function (link) {
-//       link.addEventListener('click', function (event) {
-//           // Remove the 'active' class from all links
-//           links.forEach(function (otherLink) {
-//               otherLink.classList.remove('active');
-//           });
-
-//           // Add the 'active' class to the clicked link
-//           link.classList.add('active');
-//       });
-//   });
-// });
-
-
-
 function infoReveal(elementId, clickedLink) {
   const allRevealTexts = document.querySelectorAll('.revealText');
   allRevealTexts.forEach(text => {
@@ -103,24 +70,41 @@ var typed2 = new Typed(".effect2", {
 
 // Pop up contact page
 const showPopupButton = document.getElementById("showPopup");
-const closePopupButton = document.getElementById("closePopup");
-const contactPopup = document.getElementById("contactPopup");
+        const closePopupButton = document.getElementById("closePopup");
+        const contactPopup = document.getElementById("contactPopup");
+        const nameInput = document.querySelector('#nameInput');
+        const emailInput = document.querySelector('#emailInput');
+        const textarea = document.querySelector('#textarea');
 
-showPopupButton.addEventListener("click", function () {
-    contactPopup.style.display = "block";
-});
+        showPopupButton.addEventListener("click", function () {
+            contactPopup.style.display = "block";
+        });
 
-closePopupButton.addEventListener("click", function () {
-    contactPopup.style.display = "none";
-});
+        closePopupButton.addEventListener("click", function () {
+            contactPopup.style.display = "none";
+            
+        });
 
-// Add event listener to close the form when clicking outside
-document.body.addEventListener('click', function (event) {
-    // Check if the click is outside the form
-    if (!contactPopup.contains(event.target) && event.target !== showPopupButton) {
-        contactPopup.style.display = "none";
-    }
-});
+
+        // Add event listener to close the form when clicking outside
+        window.addEventListener('click', function (e) {
+            if (e.target === contactPopup) {
+                contactPopup.style.display = "none";
+                nameInput.value = "";
+                emailInput.value = "";
+                textarea.value = "";
+            }
+        });
+        // clearing the form
+        let myForm = document.querySelector('#myForm');
+        myForm.addEventListener('submit', function(){
+          
+                nameInput.value = "";
+                emailInput.value = "";
+                textarea.value = "";
+          
+        });
+
 
 
 
