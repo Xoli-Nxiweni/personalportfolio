@@ -63,36 +63,78 @@ nav .links{
 nav .links li{
     list-style: none;
     transition: all .4s ease-in-out;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
-nav .links a{
+nav .links a {
     float: right;
     display: block;
     font-weight: bold;
     color: var(--button-color);
     text-decoration: none;
     letter-spacing: .2em;
-    transition: all .4s ease-in-out;
+    transition: color .4s ease-in-out, border-bottom-color .4s ease-in-out; /* Add transition for color and border */
     display: flex;
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
     font-size: .7em;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 10px 25px;
+    position: relative;
 }
+
+nav .links a::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: .4em solid rgba(0, 0, 0, 0);
+    border-radius: 1px 1px;
+    width: 0;
+    transition: width .4s ease-in-out, border-bottom-color .4s ease-in-out; /* Add transition for width and border */
+}
+
+/* nav .links a:hover,
+nav .links a.active {
+    color: ;
+} */
+
+nav .links a:hover::before,
+nav .links a.activeEffect::before
+{
+    width: 100%;
+    border-bottom-color: #5DC3F4;
+}
+
+
+/* .links a::before{
+    position: relative;
+    bottom: 0;
+    content: '';
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    width: 10px;
+}
+.links a::before:hover{
+    content: '';
+    position: relative;
+    bottom: 0;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 100%;
+} */
 nav .links i{
     font-size: 16px;
     padding: 0 0 5px 0;
 }
 
-nav .links li a:hover{
-    background: #afafaf64;
+/* nav .links li a:hover{
+    color: #000;
 
 }
-nav .active{
+.activeEffect{
     background: #afafaf64;
-}
+} */
 #nav-toggle{
     position: relative;
     top: -100px;
@@ -176,6 +218,12 @@ nav .toggleBar .bar{
         grid-template-rows: auto;
         column-gap: 10px;
     }
+
+}
+@media (min-width: 400px) {
+    form {
+        width: 360px;
+    }
 }
 @media (max-width: 940px) {
     nav{
@@ -206,13 +254,17 @@ nav .toggleBar .bar{
         align-items: center;
     }
     nav .links li{
-        border-bottom: 1px solid var(--button-color);
+        /* border-bottom: 1px solid var(--button-color); */
 }
 nav .links li:hover{
-        background: #b6b2b264;;
+        /* background: #b6b2b264;; */
 }
 nav.sticky .links li{
-    border-bottom: 1px solid var(--nav-background-color);
+    /* width: 100%;
+    padding: 0 50%; */
+
+    /* text-align: center; */
+    /* border-bottom: 1px solid var(--nav-background-color); */
   }
 nav.sticky .links{
    background: inherit;
@@ -287,6 +339,13 @@ nav.sticky .links{
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: auto;
     }
+    .environmentsContainers img{
+        width: 35px;
+        height: auto;
+    }
+    .environmentsContainers h3{
+        font-size: .8em;
+    }
     .ProjectsContainer{
         display: grid;
         grid-template-columns: repeat(1, 2fr);
@@ -348,6 +407,9 @@ nav.sticky .links{
         grid-row: 1;
         margin: auto;
     }
+    form{
+        width: 250px;
+    }
 }
 @media (max-width:320px) {
     .buttons{
@@ -365,7 +427,7 @@ nav.sticky .links{
     }
 }
 .index-section{
-    background: rgba(223, 223, 223, 0.639);
+    background: #dfdfdfa3;
     background-image: url(Properties/imgs/bubble-png-transparent-bubble-images-pluspng-21.png);
     background-attachment: fixed;
     background-size: cover;
@@ -399,6 +461,11 @@ nav.sticky .links{
 }
 .buttons{
     padding: 10px 0 0 0;
+}
+.btn,
+.button,
+button{
+    box-shadow: 0 0 3px rgb(0, 0, 0);
 }
 
 /* Pop up container */
@@ -435,6 +502,7 @@ nav.sticky .links{
     transition: all .4s ease-in-out;
     border-radius: 10px;
     padding: 20px;
+    margin: 0 auto;
 }
 .popup-content .bar{
     width: 25px;
@@ -457,16 +525,13 @@ nav.sticky .links{
     color: var(--nav-background-color);
     padding: 20px;
 }
-form {
-    width: 350px;
-    
-}
+
 .input, .textarea, .button {
     display: block;
     background: #c6c6c6;
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto;
     border: 1px solid var(--nav-background-color);
     border-radius: 10px;
     text-align: start;
@@ -488,6 +553,11 @@ form {
 .button:hover{
     background-color:inherit;
     color: var(--nav-background-color)
+}
+@media (max-width:940) {
+    .popup-content {
+        width: 100px;
+    }
 }
 .services{
     text-align: center;
@@ -581,11 +651,27 @@ form {
     text-decoration: none;
     transition: all .4s ease-in-out;
     cursor: pointer;
+    position: relative;
     /* border-bottom: 2px solid #5DC3F4; */
 }
-.service-header a.active {
-    border-bottom: 2px solid #5DC3F4;
+.service-header a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: .2em solid rgba(0, 0, 0, 0);
+    border-radius: 1px 1px;
+    width: 0;
+    transition: width .4s ease-in-out, border-bottom-color .4s ease-in-out; /* Add transition for width and border */
 }
+.service-header a.active::before{
+    width: 100%;
+    border-bottom-color: #5DC3F4;
+}
+/* .service-header a.active {
+    border-bottom: 2px solid #5DC3F4;
+} */
 #revealText1{
     display: block;
     text-align: left;

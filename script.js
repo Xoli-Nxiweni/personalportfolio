@@ -1,6 +1,4 @@
-function contactPopUp(){
-  alert("Under Development!!")
-};
+
 
 //sticky scroll behavior
 const header = document.querySelector("nav");
@@ -8,9 +6,9 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-//navsDisappear
+// navsDisappear
 const checkbox = document.getElementById('nav-toggle');
-const navLinks = document.querySelectorAll('a');
+const navLinks = document.querySelectorAll('.links a');
 function closeMobileNav(){
   checkbox.checked = false;
 }
@@ -155,25 +153,19 @@ function updateProgressBar(scalePercentageId, progressBarId) {
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
         });
 
-        // Get the scroll-up button element
     const scrollUpButton = document.getElementById('scrollup-Btn');
 
     // Add a scroll event listener
     window.addEventListener('scroll', function () {
-        // Check the scroll position
         if (document.documentElement.scrollTop > 80) {
-            // If scrolled down 100 pixels, show the button
             scrollUpButton.style.display = 'block';
         } else {
-            // If at the top or scrolled less than 100 pixels, hide the button
             scrollUpButton.style.display = 'none';
         }
     });
     function openImage() {
-      // Replace 'path/to/your/image.jpg' with the actual path to your image
       var imageUrl = 'Properties/imgs/Logo.png';
 
-      // Open the image in a new tab
       window.open(imageUrl, '_blank');
   }
   function showModal() {
@@ -189,3 +181,38 @@ function closeModal() {
     modal.style.display = 'none';
     overlay.style.display = 'none';
 }
+
+const anchorsActive = document.querySelectorAll('.links a');
+
+anchorsActive.forEach(function(anchor) {
+  anchor.addEventListener('click', function() {
+    for (let i = 0; i < anchorsActive.length; i++) {
+      anchorsActive[i].classList.remove('activeEffect');
+    }
+    anchor.classList.add('activeEffect');
+  });
+});
+
+const links = document.querySelectorAll('.links a');
+const servicesSection = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () =>{
+  let len = servicesSection.length;
+  while(--len && this.window.scrollY + 99 < servicesSection[len].offsetTop){}
+  links.forEach(ltx => ltx.classList.remove('activeEffect')); 
+  if(len >= 0){
+    links[len].classList.add('activeEffect');
+  }
+});
+
+// const links = document.querySelectorAll('.links a');
+// const sections = document.querySelectorAll('section');
+
+// window.addEventListener('scroll', function () {
+//   let len = sections.length;
+//   while (--len >= 0 && this.window.scrollY + 99 < sections[len].offsetTop) {}
+//   links.forEach(link => link.classList.remove('activeEffect'));
+//   if (len >= 0) {
+//     links[len].classList.add('activeEffect');
+//   }
+// });
