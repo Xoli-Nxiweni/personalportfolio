@@ -444,8 +444,7 @@ nav.sticky .links{
 }
 .btn{
     padding: 12px;
-    width: auto;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight:bold;
     border: 2px solid var(--nav-background-color);
     color: var(--button-color);
@@ -858,12 +857,14 @@ button{
     right: 2%;
     bottom: 5%;
     transition: all .4s ease-in-out;
+    
 }
 .upButton{
     border-radius: 50px;
     background-color: #00396E;
     cursor: pointer;
     transition: all .4s ease-out;
+    box-shadow: 0 0 10px black;
 }
 .upButton:hover{
     border-radius: 10px;

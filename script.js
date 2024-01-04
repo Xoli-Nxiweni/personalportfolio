@@ -1,5 +1,3 @@
-
-
 //sticky scroll behavior
 const header = document.querySelector("nav");
 window.addEventListener("scroll", function () {
@@ -27,20 +25,16 @@ function infoReveal(elementId, clickedLink) {
       revealText.style.display = "block";
   }
 
-  // Remove 'active' class from all links
   const allLinks = document.querySelectorAll('.service-header a');
   allLinks.forEach(link => {
       link.classList.remove('active');
   });
-
-  // Add 'active' class to the clicked link
   if (clickedLink) {
       clickedLink.classList.add('active');
   }
 };
 
 
-//wordchange effect
 var typed = new Typed(".effect", {
   strings: ["UX/UI Developer.",
   "Front End Designer.", 
@@ -67,7 +61,7 @@ var typed2 = new Typed(".effect2", {
 
 
 // Pop up contact page
-const showPopupButton = document.getElementById("showPopup");
+        const showPopupButton = document.getElementById("showPopup");
         const closePopupButton = document.getElementById("closePopup");
         const contactPopup = document.getElementById("contactPopup");
         const nameInput = document.querySelector('#nameInput');
@@ -84,7 +78,6 @@ const showPopupButton = document.getElementById("showPopup");
         });
 
 
-        // Add event listener to close the form when clicking outside
         window.addEventListener('click', function (e) {
             if (e.target === contactPopup) {
                 contactPopup.style.display = "none";
@@ -104,10 +97,7 @@ const showPopupButton = document.getElementById("showPopup");
         });
 
 
-
-
-
-// JavaScript code to update progress bars with transition effect
+// update progress bars with transition effect
 document.addEventListener('DOMContentLoaded', function () {
   updateProgressBar('scalePercentage1', 'progressBar1');
   updateProgressBar('scalePercentage2', 'progressBar2');
@@ -124,10 +114,8 @@ function updateProgressBar(scalePercentageId, progressBarId) {
 }
 
 
-
         // Initialize ScrollReveal
         const sr = ScrollReveal();
-        // Define the configuration for the scroll reveal effect
         sr.reveal('.index-section h1, .index-section p, .contactPopup, .myServicesText, .myServicesText, .Languages, .portfolioContainers, .scroll-upButton, .environments', {
             duration: 1000,   // Duration of the reveal animation (in milliseconds)
             origin: 'bottom', // From where the elements will be revealed
@@ -136,7 +124,6 @@ function updateProgressBar(scalePercentageId, progressBarId) {
             easing: 'cubic-bezier(0.5, 0, 0, 1)', // Easing function for the animation
         });
 
-        // You can add more elements to reveal by adding additional sr.reveal calls
         // sr.reveal('.image , .myServicesImage, ', {
         //     duration: 1000,
         //     origin: 'right',
@@ -155,7 +142,7 @@ function updateProgressBar(scalePercentageId, progressBarId) {
 
     const scrollUpButton = document.getElementById('scrollup-Btn');
 
-    // Add a scroll event listener
+    //scroll event listener
     window.addEventListener('scroll', function () {
         if (document.documentElement.scrollTop > 80) {
             scrollUpButton.style.display = 'block';
@@ -204,15 +191,3 @@ window.addEventListener('scroll', () =>{
     links[len].classList.add('activeEffect');
   }
 });
-
-// const links = document.querySelectorAll('.links a');
-// const sections = document.querySelectorAll('section');
-
-// window.addEventListener('scroll', function () {
-//   let len = sections.length;
-//   while (--len >= 0 && this.window.scrollY + 99 < sections[len].offsetTop) {}
-//   links.forEach(link => link.classList.remove('activeEffect'));
-//   if (len >= 0) {
-//     links[len].classList.add('activeEffect');
-//   }
-// });
