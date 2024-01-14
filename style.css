@@ -10,8 +10,7 @@
     list-style: none;
 }
 :root{
-	/* --nav-background-color: #00396E; */
-	--nav-background-color: #5DC3F4;
+	--nav-background-color: #00396E;
     --bg-color: ;
     --second-bg-color: ;
     --text-color: #242121 ;
