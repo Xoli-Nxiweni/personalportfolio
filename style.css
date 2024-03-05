@@ -559,12 +559,13 @@ button{
     }
 }
 .services{
-    /* text-align: center; */
+    text-align: center;
     background: #fff;
     /* align-items: center; */
     padding: 15px 10%;
     /* height: 100vh; */
 }
+
 .red{
     color: red;
     font-weight: bold;
@@ -572,6 +573,9 @@ button{
 }
 .services h3{
     padding: 0 0 5px 0;
+}
+.services h1{
+    text-align: left;
 }
 
 .services .sevContainer{
