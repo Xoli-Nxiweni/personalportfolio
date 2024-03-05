@@ -46,16 +46,16 @@ var typed = new Typed(".effect", {
   backSpeed: 25,
   backDelay: 2500,
 });
-var typed2 = new Typed(".effect2", {
-  strings: ["About Me.", 
-  "About Me.", 
-  "My Achievements.", 
-  "My Services.",],
-  loop: true,
-  typeSpeed: 90,
-  backSpeed: 25,
-  backDelay: 2000,
-});
+// var typed2 = new Typed(".effect2", {
+//   strings: ["About Me.", 
+//   "About Me.", 
+//   "My Achievements.", 
+//   "My Services.",],
+//   loop: true,
+//   typeSpeed: 90,
+//   backSpeed: 25,
+//   backDelay: 2000,
+// });
 
 
 
@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
   updateProgressBar('scalePercentage4', 'progressBar4');
   updateProgressBar('scalePercentage5', 'progressBar5');
   updateProgressBar('scalePercentage6', 'progressBar6');
+  updateProgressBar('scalePercentage7', 'progressBar7');
 });
 
 function updateProgressBar(scalePercentageId, progressBarId) {

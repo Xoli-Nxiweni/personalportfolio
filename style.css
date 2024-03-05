@@ -371,7 +371,7 @@ nav.sticky .links{
 }
 @media (max-width:414px) {
     .service-header h3{
-        font-size: .73em;
+        font-size: .78em;
         padding: 20px 0 0 0;
     }
     #services li{
@@ -559,7 +559,7 @@ button{
     }
 }
 .services{
-    text-align: center;
+    /* text-align: center; */
     background: #fff;
     /* align-items: center; */
     padding: 15px 10%;
@@ -595,7 +595,7 @@ button{
     cursor: pointer;
 }
 .services .myServicesImage img:hover{
-    box-shadow: 0 5px 25px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .services h1, .services h3 a{
     color: var(--nav-background-color);
@@ -776,7 +776,7 @@ button{
     background: #fff;
     /* min-width: 200px; */
     /* box-shadow: 5px 10px 10px #00000029; */
-    box-shadow: 0 5px 10px 1px #00000080;
+    box-shadow: 0 0 10px #00000080;
     /* height: 200px; */
     /* margin: 20px; */
     transition: all .4s ease-in-out;
@@ -860,14 +860,14 @@ button{
     
 }
 .upButton{
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: #00396E;
     cursor: pointer;
     transition: all .4s ease-out;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
 }
 .upButton:hover{
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .upButton i{
     color: #fff;
@@ -897,7 +897,7 @@ button{
 }
 .ProjectsContent{
    padding: 10px 0;
-   box-shadow: 5px 4px 10px #808080;
+   box-shadow: 0 0 5px #808080;
    background: #ffffff;
    transition: all .4s ease-in-out;
 }
@@ -919,7 +919,7 @@ button{
     color: var(--nav-background-color); 
 }
 .ProjectsContent:hover{
-    box-shadow: 5px 4px 10px #cdcdcd;
+    box-shadow: 0 0 10px #808080;
 }
 .Projects h3{
     padding: 5px 0 0 0;
