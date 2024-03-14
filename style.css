@@ -198,7 +198,9 @@ nav .toggleBar .bar{
     .index-section h2{
       font-weight: 1000;
     }
-    .portfolioContainers .leftContainer, .portfolioContainers .midContainer, .portfolioContainers .rightContainer{
+    .portfolioContainers .leftContainer, 
+    .portfolioContainers .midContainer, 
+    .portfolioContainers .rightContainer{
         width: 100%;
     }
     .portfolioContainers{
@@ -525,7 +527,9 @@ button{
     padding: 20px;
 }
 
-.input, .textarea, .button {
+.input, 
+.textarea, 
+.button {
     display: block;
     background: #c6c6c6;
     width: 100%;
@@ -585,7 +589,8 @@ button{
     grid-template-columns: repeat(2, 50%); 
     padding: 50px 0;
 }
-.services .sevContainer p, .sevContainer h3{
+.services .sevContainer p, 
+.sevContainer h3{
     /* justify-content: space-around; */
     /* align-items: center; */
     text-align: left;
@@ -601,7 +606,8 @@ button{
 .services .myServicesImage img:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.services h1, .services h3 a{
+.services h1, 
+.services h3 a{
     color: var(--nav-background-color);
     
     /* padding: 0 2rem 0 0; */
@@ -655,6 +661,7 @@ button{
     transition: all .4s ease-in-out;
     cursor: pointer;
     position: relative;
+    padding: 5px;
     /* border-bottom: 2px solid #5DC3F4; */
 }
 .service-header a::before{
@@ -728,15 +735,21 @@ button{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 10px;
     }
-.portfolioContainers, .LanguageContainers{
+.portfolioContainers, 
+.LanguageContainers{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.portfolioContainers .leftContainer, .portfolioContainers .midContainer, .portfolioContainers .rightContainer{
+.portfolioContainers .leftContainer, 
+.portfolioContainers .midContainer, 
+.portfolioContainers .rightContainer{
     width: 100%;
 }
-.LanguageContainers .firstContainer, .LanguageContainers .secondContainer, .LanguageContainers .thirdContainer, .LanguageContainers .fourthContainer{
+.LanguageContainers .firstContainer, 
+.LanguageContainers .secondContainer, 
+.LanguageContainers .thirdContainer, 
+.LanguageContainers .fourthContainer{
     width: 100%;
 }
 .fifthContainer{
@@ -749,7 +762,7 @@ button{
     background: #dfdfdfa3;
     /* display: grid; */
     text-align: center;
-    background-image: url(Properties/imgs/bubble-png-transparent-bubble-images-pluspng-21.png);
+    /* background-image: url(Properties/imgs/bubble-png-transparent-bubble-images-pluspng-21.png); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -776,7 +789,9 @@ button{
     padding: 10px;
 }
 
-.portfolioContainers .leftContainer, .portfolioContainers .midContainer, .portfolioContainers .rightContainer{
+.portfolioContainers .leftContainer, 
+.portfolioContainers .midContainer, 
+.portfolioContainers .rightContainer{
     background: #fff;
     /* min-width: 200px; */
     /* box-shadow: 5px 10px 10px #00000029; */
@@ -789,7 +804,9 @@ button{
     cursor: pointer;
     padding: 10px;
 }
-.leftContainer:hover, .midContainer:hover, .rightContainer:hover{
+.leftContainer:hover, 
+.midContainer:hover, 
+.rightContainer:hover{
     /* transform: scale(1.1); */
     /* border: 1px solid #5DC3F4; */
     /* box-shadow: 10px 10px 10px #00396E; */
@@ -808,11 +825,15 @@ button{
     transition: all .4s ease-in-out;
     /* border: 1px solid #00396E; */
     border-radius: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 10px;
     
 }
-.LanguageContainers .firstContainer, .LanguageContainers .secondContainer, .LanguageContainers .thirdContainer, .LanguageContainers .fourthContainer, .LanguageContainers .fifthContainer{
+.LanguageContainers .firstContainer, 
+.LanguageContainers .secondContainer, 
+.LanguageContainers .thirdContainer, 
+.LanguageContainers .fourthContainer, 
+.LanguageContainers .fifthContainer{
     max-width: 100%;
     border-radius: 20px;
     background: #ffffff;
@@ -908,7 +929,8 @@ button{
 .ProjectsContent img{
     width:350px;
 }
-.ProjectsContent input, .ProjectsContent button{
+.ProjectsContent input, 
+.ProjectsContent button{
     padding:5px;
     width: auto;
     border: 1px solid var(--nav-background-color);
@@ -918,7 +940,8 @@ button{
     transition: all .4s ease-in;
     cursor: pointer;
 }
-.ProjectsContent input:hover, .ProjectsContent button:hover{
+.ProjectsContent input:hover, 
+.ProjectsContent button:hover{
     background-color:inherit;
     color: var(--nav-background-color); 
 }
@@ -967,7 +990,7 @@ button{
 /* Style the footer */
 .footer {
     padding: 20px 0 0 0;
-    background-image: url(Properties/imgs/bubble-png-transparent-bubble-images-pluspng-21.png);
+    /* background-image: url(Properties/imgs/bubble-png-transparent-bubble-images-pluspng-21.png); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
