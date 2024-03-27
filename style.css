@@ -255,19 +255,19 @@ nav .toggleBar .bar{
         transition: all .4s ease-in;
         align-items: center;
     }
-    nav .links li{
-        /* border-bottom: 1px solid var(--button-color); */
+    /* nav .links li{
+        border-bottom: 1px solid var(--button-color);
 }
 nav .links li:hover{
-        /* background: #b6b2b264;; */
-}
-nav.sticky .links li{
-    /* width: 100%;
-    padding: 0 50%; */
+        background: #b6b2b264;;
+} */
+/* nav.sticky .links li{
+    width: 100%;
+    padding: 0 50%;
 
-    /* text-align: center; */
-    /* border-bottom: 1px solid var(--nav-background-color); */
-  }
+    text-align: center;
+    border-bottom: 1px solid var(--nav-background-color);
+  } */
 nav.sticky .links{
    background: inherit;
   }
@@ -891,9 +891,9 @@ button{
     transition: all .4s ease-out;
     box-shadow: 0 0 5px black;
 }
-.upButton:hover{
-    /* border-radius: 10px; */
-}
+/* .upButton:hover{
+    border-radius: 10px;
+} */
 .upButton i{
     color: #fff;
     text-align: center;
@@ -968,7 +968,7 @@ button{
     }
     
 }
-@media(max-width:940px) and (max-width:900px) {
+@media (max-width:940px) {
     .ProjectsContainer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
