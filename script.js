@@ -107,6 +107,9 @@ document.addEventListener('DOMContentLoaded', function () {
   updateProgressBar('scalePercentage5', 'progressBar5');
   updateProgressBar('scalePercentage6', 'progressBar6');
   updateProgressBar('scalePercentage7', 'progressBar7');
+  updateProgressBar('scalePercentage8', 'progressBar8');
+  updateProgressBar('scalePercentage9', 'progressBar9');
+  updateProgressBar('scalePercentage10', 'progressBar10');
 });
 
 function updateProgressBar(scalePercentageId, progressBarId) {
