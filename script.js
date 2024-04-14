@@ -37,10 +37,10 @@ function infoReveal(elementId, clickedLink) {
 
 var typed = new Typed(".effect", {
   strings: ["UX/UI Developer.",
-  "Frontend Designer.", 
-  "Frontend Developer.", 
+  "Frontend Designer.",
   "Java Programmer.", 
   "Frontend Tester.", 
+  "Frontend Developer.", 
   "Logo Designer.",],
   loop: true,
   typeSpeed: 80,
