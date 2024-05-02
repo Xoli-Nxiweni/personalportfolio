@@ -244,7 +244,7 @@ nav .toggleBar .bar{
       font-size: 18px;
     }
     nav .links{
-        float: none;
+        /* float: none; */
         position: fixed;
         z-index: 9;
         left: 0;
