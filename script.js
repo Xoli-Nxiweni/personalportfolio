@@ -157,9 +157,9 @@ function updateProgressBar(scalePercentageId, progressBarId) {
     });
     function openImage() {
       var imageUrl = 'Properties/imgs/Logo.png';
-
       window.open(imageUrl, '_blank');
   }
+  
   function showModal() {
     var modal = document.getElementById('resumeModal');
     var overlay = document.getElementById('overlay');
@@ -175,7 +175,6 @@ function closeModal() {
 }
 
 const anchorsActive = document.querySelectorAll('.links a');
-
 anchorsActive.forEach(function(anchor) {
   anchor.addEventListener('click', function() {
     for (let i = 0; i < anchorsActive.length; i++) {
@@ -187,7 +186,6 @@ anchorsActive.forEach(function(anchor) {
 
 const links = document.querySelectorAll('.links a');
 const servicesSection = document.querySelectorAll('section');
-
 window.addEventListener('scroll', () =>{
   let len = servicesSection.length;
   while(--len && this.window.scrollY + 99 < servicesSection[len].offsetTop){}
@@ -196,3 +194,88 @@ window.addEventListener('scroll', () =>{
     links[len].classList.add('activeEffect');
   }
 });
+
+
+const projectContainer = document.querySelector('.ProjectsContainer');
+const projects = [
+  {
+    image: "/Properties/imgs/Project_Java.png",
+    heading: "Java Calculator App",
+    description: "This robust Java application adheres to established coding principles and utilizes comprehensive exception handling. This ensures stability, predictability, and minimizes unexpected disruptions, resulting in a reliable and resilient experience for users.",
+    button: "View Repository",
+    href: "https://github.com/Xoli-Nxiweni/Java-Calculator-App/"
+  },
+  {
+    image: "Properties/imgs/Project_1.png",
+    heading: "Personal Portfolio",
+    description: "Created my debut web portfolio featuring a dynamic Weather App. Utilizing HTML, CSS, and JS, users can input their preferred city to instantly access accurate weather conditions. This project showcases my proficiency in web development and enthusiasm for creating engaging, functional interfaces.",
+    button: "View Project",
+    href: "https://xolinxiweniresume.netlify.app/"
+  },
+  {
+    image: "Properties/imgs/Project_2.png",
+    heading: "Collaborated Portfolio",
+    description: "As a dynamic duo, we revamped the website's landing page using our HTML, CSS, and JavaScript expertise. The collaborative effort resulted in an engaging user experience. The redesigned page showcases intuitive navigation and visually striking elements, embodying our commitment to a seamless and interactive online presence.",
+    button: "View Project",
+    href: "https://ambitious-meadow-01ec35d10.4.azurestaticapps.net//"
+  },
+  {
+    image: "Properties/imgs/ATMApp.png",
+    heading: "Java ATM App",
+    description: "This program simulates an ATM system. It includes PIN verification, balance management, and transaction history functionalities. Users can check balances, deposit and withdraw funds, and print transaction statements. The code ensures PIN security and handles user input errors, providing a comprehensive and interactive ATM experience.",
+    button: "View Repository",
+    href: "https://github.com/Xoli-Nxiweni/JavaATMApp"
+  },
+  {
+    image: "Properties/imgs/Project_3.png",
+    heading: "Web-Based Calculator",
+    description: "The calculator, a CodSoft project, offers a user-friendly web application with a polished interface for basic arithmetic operations. Its responsive design ensures seamless experiences on diverse devices, allowing users to toggle the calculator on or off for enhanced control and usability.",
+    button: "View Project",
+    href: "https://xoli-nxiweni.github.io/CodSoft_WebDevelopment_Task_3/"
+  },
+  {
+    image: "Properties/imgs/Screenshot (299).png",
+    heading: "OAuth Login Form",
+    description: "The OAuth login form project simplifies user authentication with OAuth. Its streamlined interface enables seamless login experiences across devices, ensuring security and convenience for accessing various platforms and services. With a registration form attached.",
+    button: "View Project",
+    href: "https://xoli-nxiweni.github.io/Google_Oauth/"
+  },
+  {
+    image: "Properties/imgs/IDNumChecker.png",
+    heading: "Java ID Number Checker",
+    description: "This Java program reads and processes South African ID numbers, extracting and displaying birth year, date, month, gender, citizenship, and validation status. It employs object-oriented programming and exception handling for accuracy and user-friendly interaction, making it valuable for ID verification tasks.",
+    button: "View Repository",
+    href: "https://github.com/Xoli-Nxiweni/IdNumberChecker"
+  },
+  {
+    image: "Properties/imgs/reactApp.png",
+    heading: "React Calculator App",
+    description: "My React.js calculator app is a sleek, user-friendly tool designed for seamless calculations on any device. Its responsive design ensures optimal functionality across desktops, tablets, and smartphones, adapting effortlessly to various screen sizes. Experience the convenience of a fully functional calculator, accessible anytime, anywhere.",
+    button: "View Project",
+    href: "https://xoli-nxiweni.github.io/ReactCalculator"
+  },
+]
+const renderProjects = ()=>{
+  projects.forEach((project) =>{
+    const ProjectsContent = document.createElement('div');
+    ProjectsContent.classList.add('ProjectsContent');
+    ProjectsContent.innerHTML = `
+    <img src="${project.image}" alt="">
+    <h3>${project.heading}</h3>
+    <p>${project.description}</p>
+    <input type="button" value="${project.button}" onclick="window.open('${project.href}', '_blank')">
+  `
+  projectContainer.appendChild(ProjectsContent);
+  
+  });
+  const ProjectsContent2 = document.createElement('div');
+  ProjectsContent2.classList.add('ProjectsContent');
+  ProjectsContent2.innerHTML = `
+  <img src="Properties/imgs/Logo_1.png" >
+  <h3>Reality Trading Logo</h3>
+  <p>A sleek emblem, artfully designed for a Forex powerhouse, effortlessly commands attention in the financial realm. Balancing simplicity and allure, this symbol speaks volumes, propelling the establishment into the spotlight. A visual testament to excellence, ensuring instant recognition and solidifying its status in the dynamic world of finances.</p>
+  <button id="openImageButton" onclick="openImage()">View Project</button>
+  `
+  projectContainer.appendChild(ProjectsContent2);
+}
+renderProjects();
