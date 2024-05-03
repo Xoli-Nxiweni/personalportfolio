@@ -199,7 +199,7 @@ window.addEventListener('scroll', () =>{
 const projectContainer = document.querySelector('.ProjectsContainer');
 const projects = [
   {
-    image: "/Properties/imgs/Project_Java.png",
+    image: "Properties/imgs/Project_Java.png",
     heading: "Java Calculator App",
     description: "This robust Java application adheres to established coding principles and utilizes comprehensive exception handling. This ensures stability, predictability, and minimizes unexpected disruptions, resulting in a reliable and resilient experience for users.",
     button: "View Repository",
