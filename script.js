@@ -257,6 +257,15 @@ const projects = [
   },
 ]
 const renderProjects = ()=>{
+  const ProjectsContent2 = document.createElement('div');
+  ProjectsContent2.classList.add('ProjectsContent');
+  ProjectsContent2.innerHTML = `
+  <img src="Properties/imgs/Logo_1.png" >
+  <h3>Reality Trading Logo</h3>
+  <p>A sleek emblem, artfully designed for a Forex powerhouse, effortlessly commands attention in the financial realm. Balancing simplicity and allure, this symbol speaks volumes, propelling the establishment into the spotlight. A visual testament to excellence, ensuring instant recognition and solidifying its status in the dynamic world of finances.</p>
+  <button id="openImageButton" onclick="openImage()">View Image</button>
+  `
+  projectContainer.appendChild(ProjectsContent2);
   projects.forEach((project) =>{
     const ProjectsContent = document.createElement('div');
     ProjectsContent.classList.add('ProjectsContent');
@@ -267,16 +276,7 @@ const renderProjects = ()=>{
     <input type="button" value="${project.button}" onclick="window.open('${project.href}', '_blank')">
   `
   projectContainer.appendChild(ProjectsContent);
-  
   });
-  const ProjectsContent2 = document.createElement('div');
-  ProjectsContent2.classList.add('ProjectsContent');
-  ProjectsContent2.innerHTML = `
-  <img src="Properties/imgs/Logo_1.png" >
-  <h3>Reality Trading Logo</h3>
-  <p>A sleek emblem, artfully designed for a Forex powerhouse, effortlessly commands attention in the financial realm. Balancing simplicity and allure, this symbol speaks volumes, propelling the establishment into the spotlight. A visual testament to excellence, ensuring instant recognition and solidifying its status in the dynamic world of finances.</p>
-  <button id="openImageButton" onclick="openImage()">View Project</button>
-  `
-  projectContainer.appendChild(ProjectsContent2);
+
 }
 renderProjects();
