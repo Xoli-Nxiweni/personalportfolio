@@ -59,8 +59,6 @@ var typed = new Typed(".effect", {
 // });
 
 
-
-
 // Pop up contact page
         const showPopupButton = document.getElementById("showPopup");
         const closePopupButton = document.getElementById("closePopup");
@@ -75,9 +73,7 @@ var typed = new Typed(".effect", {
 
         closePopupButton.addEventListener("click", function () {
             contactPopup.style.display = "none";
-            
         });
-
 
         window.addEventListener('click', function (e) {
             if (e.target === contactPopup) {
@@ -90,11 +86,9 @@ var typed = new Typed(".effect", {
         // clearing the form
         let myForm = document.querySelector('#myForm');
         myForm.addEventListener('submit', function(){
-          
                 nameInput.value = "";
                 emailInput.value = "";
                 textarea.value = "";
-          
         });
 
 
