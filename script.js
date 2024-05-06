@@ -248,6 +248,13 @@ const projects = [
     button: "View Project",
     href: "https://xoli-nxiweni.github.io/ReactCalculator"
   },
+  {
+    image: "Properties/imgs/finalBootcampProj.png",
+    heading: "Mlab Bootcamp Project",
+    description: "My bootcamp final application webpage not only exhibits a modern and intuitive interface but also highlights my cloning abilities. Using HTML, CSS, and JS, I seamlessly converted a picture design into a functional webpage with dynamic content, showcasing my skills and my abilities. The responsive design ensures a seamless experience across devices.",
+    button: "View Project",
+    href: "https://xoli-nxiweni.github.io/FinalBootcampProj"
+  },
 ]
 const renderProjects = ()=>{
   projects.forEach((project) =>{
