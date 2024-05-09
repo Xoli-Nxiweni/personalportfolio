@@ -207,6 +207,13 @@ const projects = [
     href: "https://xolinxiweniresume.netlify.app/"
   },
   {
+    image: "Properties/imgs/WordPress.png",
+    heading: "My WordPress Project",
+    description: "My debut WordPress project is a bespoke website for a pharmaceutical establishment. It features a custom theme tailored to showcase the establishment's services, products, and expertise. The site is designed with user-friendly navigation and visually appealing elements to engage visitors and promote the establishment's offerings effectively.",
+    button: "View Project",
+    href: "https://pharmastar.000webhostapp.com/"
+  },
+  {
     image: "Properties/imgs/Project_2.png",
     heading: "Collaborated Portfolio",
     description: "As a dynamic duo, we revamped the website's landing page using our HTML, CSS, and JavaScript expertise. The collaborative effort resulted in an engaging user experience. The redesigned page showcases intuitive navigation and visually striking elements, embodying our commitment to a seamless and interactive online presence.",
