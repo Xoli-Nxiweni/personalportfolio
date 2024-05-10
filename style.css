@@ -928,6 +928,7 @@ button{
     gap: 25px;
     grid-row: auto;
     text-align: center;
+    width: auto;
     padding: 10px 0 16px 0;
 }
 .Projects h1{
@@ -1005,12 +1006,8 @@ button{
 /* Style the footer */
 .footer {
     padding: 20px 0 0 0;
-    /* background-image: url(Properties/imgs/bubble-png-transparent-bubble-images-pluspng-21.png); */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
     text-align: center;
-    background-color: #0000002b;
+    border-top:1px solid var(--nav-background-color);
 }
 .footer .logo h1{
     color: var(--nav-background-color);
