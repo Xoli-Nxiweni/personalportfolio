@@ -287,3 +287,105 @@ const renderProjects = ()=>{
 
 }
 renderProjects();
+
+
+const container = document.querySelector('.LanguageContainers');
+    const renderThatShit = () =>{
+        const stack = [
+            {
+                src: 'https://img.icons8.com/?size=50&id=20909&format=png',
+                title: 'HTML',
+                comment: 'Moderate',
+                scaleId: 'scalePercentage1',
+                proficiency: '89%',
+                progressBarId: 'progressBar1',
+            },
+            {
+                src: 'https://img.icons8.com/?size=50&id=21278&format=png',
+                title: 'CSS',
+                comment: 'Profound understanding',
+                scaleId: 'scalePercentage2',
+                proficiency: '92%',
+                progressBarId: 'progressBar2',
+            },
+            {
+                src: 'https://img.icons8.com/?size=50&id=108784&format=png',
+                title: 'JavaScript',
+                comment: 'Intermediate',
+                scaleId: 'scalePercentage3',
+                proficiency: '83%',
+                progressBarId: 'progressBar3',
+            },
+            {
+                src: 'https://img.icons8.com/?size=50&id=13679&format=png',
+                title: 'Java',
+                comment: 'OCA Java SE 8',
+                scaleId: 'scalePercentage4',
+                proficiency: '76%',
+                progressBarId: 'progressBar4',
+            },
+            {
+                src: 'https://img.icons8.com/?size=50&id=Fycm8TUhWmFU&format=png',
+                title: 'C#',
+                comment: 'Fundamental Understanding',
+                scaleId: 'scalePercentage5',
+                proficiency: '68%',
+                progressBarId: 'progressBar5',
+            },
+            {
+                src: 'https://img.icons8.com/?size=80&id=Lk9yC4HS5r3p&format=png',
+                title: 'SQL',
+                comment: 'Intermediate',
+                scaleId: 'scalePercentage6',
+                proficiency: '67%',
+                progressBarId: 'progressBar6',
+            },
+            {
+                src: 'https://img.icons8.com/?size=80&id=54087&format=png',
+                title: 'Node.js',
+                comment: 'Improving',
+                scaleId: 'scalePercentage7',
+                proficiency: '46%',
+                progressBarId: 'progressBar7',
+            },
+            {
+                src: 'https://img.icons8.com/?size=80&id=13441&format=png',
+                title: 'Python',
+                comment: 'Improving daily',
+                scaleId: 'scalePercentage8',
+                proficiency: '45%',
+                progressBarId: 'progressBar8',
+            },
+            {
+                src: 'https://img.icons8.com/?size=80&id=123603&format=png',
+                title: 'React.js',
+                comment: 'Learning and improving',
+                scaleId: 'scalePercentage9',
+                proficiency: '32%',
+                progressBarId: 'progressBar9',
+            },
+            {
+              src: 'https://img.icons8.com/?size=80&id=4PiNHtUJVbLs&format=png',
+              title: 'Tailwind',
+              comment: 'Learning',
+              scaleId: 'scalePercentage10',
+              proficiency: '10%',
+              progressBarId: 'progressBar10',
+          }
+        ]
+        stack.forEach(e =>{
+            const techStack = document.createElement('div');
+            techStack.classList.add('firstContainer');
+            techStack.innerHTML = `
+            <img src="${e.src}" alt="">
+                    <h3>${e.title}</h3>
+                    <p>${e.comment}</p>
+                    <p>Proficiency: <span id="${e.scaleId}">${e.proficiency}</span></p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="${e.progressBarId}" style="width: 65%;"></div>
+                    </div>
+            `
+            container.appendChild(techStack);
+            })
+        }
+        renderThatShit();
