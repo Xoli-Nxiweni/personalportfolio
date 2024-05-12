@@ -262,6 +262,20 @@ const projects = [
     button: "View Project",
     href: "https://xoli-nxiweni.github.io/FinalBootcampProj"
   },
+  {
+    image: "Properties/imgs/DomManipulation.png",
+    heading: "DOM Manipulation",
+    description: "Explore a straightforward web app powered by JavaScript, dynamically updating content and button styles. All styling is managed within the JS file for immediate changes upon button clicks. Engage with the app to witness instant transformations in background color and button appearance, creating an interactive user experience.",
+    button: "View Project",
+    href: "https://xoli-nxiweni.github.io/DOM_Manipulation/"
+  },
+  {
+    image: "Properties/imgs/Terminal.png",
+    heading: "Console Simulation",
+    description: "Created a console simulation with color-changing edges, simulating GitHub commands via a fake path. Users experience repository setup, branch management, staging, committing, and pushing changes. Inspired by GitHub workflows, this project offers an engaging, hands-on understanding of repository creation and management in a visual command-line environment.",
+    button: "View Project",
+    href: "https://xoli-nxiweni.github.io/TerminalSimulation/"
+  },
 ]
 const renderProjects = ()=>{
   const ProjectsContent2 = document.createElement('div');
@@ -389,3 +403,7 @@ const container = document.querySelector('.LanguageContainers');
             })
         }
         renderThatShit();
+
+        let array = [0, 1, 2, 3, 4, 5];
+        let result = array.filter(e => e < 3).map(e => e * 2);
+        console.log(result);
