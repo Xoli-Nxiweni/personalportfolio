@@ -375,7 +375,6 @@ nav.sticky .links{
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: auto;
     }
-
 }
 @media (max-width:414px) {
     .service-header h3{
@@ -916,6 +915,7 @@ button{
     font-size: 2.4rem;
 }
 .Projects{
+    background: #ffffff;
     background-image: url(Properties/imgs/bubble-png-transparent-bubble-images-pluspng-21.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1005,6 +1005,7 @@ button{
 
 /* Style the footer */
 .footer {
+    background: #fff;
     padding: 20px 0 0 0;
     text-align: center;
     border-top:1px solid var(--nav-background-color);
@@ -1099,6 +1100,7 @@ button{
         flex-direction: column;
         align-items: center;
         padding: 0 auto;
+        font-size: 10px;
     }
     .col-md-4 {
         flex: 0 0 100%;

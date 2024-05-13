@@ -327,7 +327,7 @@ const container = document.querySelector('.LanguageContainers');
                 title: 'JavaScript',
                 comment: 'Intermediate',
                 scaleId: 'scalePercentage3',
-                proficiency: '83%',
+                proficiency: '70%',
                 progressBarId: 'progressBar3',
             },
             {
@@ -351,7 +351,7 @@ const container = document.querySelector('.LanguageContainers');
                 title: 'SQL',
                 comment: 'Intermediate',
                 scaleId: 'scalePercentage6',
-                proficiency: '67%',
+                proficiency: '57%',
                 progressBarId: 'progressBar6',
             },
             {
