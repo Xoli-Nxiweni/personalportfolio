@@ -1111,6 +1111,7 @@ button{
    /* Styles for the modal */
    #resumeModal {
     display: none;
+    display: none;
     position: fixed;
     top: 50%;
     width: 360px;
