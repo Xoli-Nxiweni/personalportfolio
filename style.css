@@ -184,8 +184,8 @@ nav .toggleBar .bar{
 }
 @media (min-width: 941px) {
     .index-section{
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         height: 100vh;
         width: 100%;
         align-items: center;
@@ -305,7 +305,6 @@ nav.sticky .links{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-        height: 100vh;
         width: 100%;
         align-items: center;
         justify-content: space-around;
