@@ -375,7 +375,7 @@ const container = document.querySelector('.LanguageContainers');
                 title: 'React.js',
                 comment: 'Learning and improving',
                 scaleId: 'scalePercentage9',
-                proficiency: '22%',
+                proficiency: '30%',
                 progressBarId: 'progressBar9',
             },
             {
