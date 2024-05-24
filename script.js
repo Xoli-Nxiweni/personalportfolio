@@ -208,7 +208,7 @@ const projects = [
   },
   {
     image: "Properties/imgs/WordPress.png",
-    heading: "My WordPress Project",
+    heading: "WordPress Project",
     description: "My debut WordPress project is a bespoke website for a pharmaceutical establishment. It features a custom theme tailored to showcase the establishment's services, products, and expertise. The site is designed with user-friendly navigation and visually appealing elements to engage visitors and promote the establishment's offerings effectively.",
     button: "View Project",
     href: "https://pharmastar.000webhostapp.com/"
