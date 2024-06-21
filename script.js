@@ -331,6 +331,14 @@ const container = document.querySelector('.LanguageContainers');
                 progressBarId: 'progressBar3',
             },
             {
+                src: 'https://img.icons8.com/?size=50&id=HcQEdKCkXUs3&format=png',
+                title: 'TypeScript',
+                comment: 'Intermediate',
+                scaleId: 'scalePercentage10',
+                proficiency: '50%',
+                progressBarId: 'progressBar10',
+            },
+            {
                 src: 'https://img.icons8.com/?size=50&id=13679&format=png',
                 title: 'Java',
                 comment: 'OCA Java SE 8',
