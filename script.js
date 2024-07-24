@@ -276,6 +276,13 @@ const projects = [
     button: "View Project",
     href: "https://xoli-nxiweni.github.io/TerminalSimulation/"
   },
+  {
+    image: "Properties/imgs/ReactUI2.png",
+    heading: "React UI Clone",
+    description: "Built a responsive React clone of a popular website using React and CSS. The project replicates the site's design, featuring dynamic content rendering and responsive layout. This project highlights proficiency in React and CSS for creating a visually appealing and adaptable user interface.",
+    button: "View Project",
+    href: "https://xoli-nxiweni.github.io/ReactUIClone2/"
+  },
 ]
 const renderProjects = ()=>{
   const ProjectsContent2 = document.createElement('div');
