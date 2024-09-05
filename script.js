@@ -104,6 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
   updateProgressBar('scalePercentage8', 'progressBar8');
   updateProgressBar('scalePercentage9', 'progressBar9');
   updateProgressBar('scalePercentage10', 'progressBar10');
+  updateProgressBar('scalePercentage11', 'progressBar11');
+  updateProgressBar('scalePercentage12', 'progressBar12');
+  updateProgressBar('scalePercentage13', 'progressBar13');
+  updateProgressBar('scalePercentage14', 'progressBar14');
 });
 
 function updateProgressBar(scalePercentageId, progressBarId) {
@@ -341,66 +345,90 @@ const container = document.querySelector('.LanguageContainers');
                 src: 'https://img.icons8.com/?size=50&id=HcQEdKCkXUs3&format=png',
                 title: 'TypeScript',
                 comment: 'Intermediate',
-                scaleId: 'scalePercentage10',
+                scaleId: 'scalePercentage4',
                 proficiency: '50%',
-                progressBarId: 'progressBar10',
+                progressBarId: 'progressBar4',
             },
             {
                 src: 'https://img.icons8.com/?size=50&id=13679&format=png',
                 title: 'Java',
                 comment: 'OCA Java SE 8',
-                scaleId: 'scalePercentage4',
+                scaleId: 'scalePercentage5',
                 proficiency: '76%',
-                progressBarId: 'progressBar4',
+                progressBarId: 'progressBar5',
             },
             {
                 src: 'https://img.icons8.com/?size=50&id=Fycm8TUhWmFU&format=png',
                 title: 'C#',
                 comment: 'Fundamental Understanding',
-                scaleId: 'scalePercentage5',
+                scaleId: 'scalePercentage6',
                 proficiency: '68%',
-                progressBarId: 'progressBar5',
+                progressBarId: 'progressBar6',
             },
             {
                 src: 'https://img.icons8.com/?size=80&id=Lk9yC4HS5r3p&format=png',
                 title: 'SQL',
                 comment: 'Intermediate',
-                scaleId: 'scalePercentage6',
+                scaleId: 'scalePercentage7',
                 proficiency: '57%',
-                progressBarId: 'progressBar6',
+                progressBarId: 'progressBar7',
             },
             {
                 src: 'https://img.icons8.com/?size=80&id=54087&format=png',
                 title: 'Node.js',
                 comment: 'Improving',
-                scaleId: 'scalePercentage7',
+                scaleId: 'scalePercentage8',
                 proficiency: '46%',
-                progressBarId: 'progressBar7',
+                progressBarId: 'progressBar8',
             },
             {
                 src: 'https://img.icons8.com/?size=80&id=13441&format=png',
                 title: 'Python',
                 comment: 'Improving daily',
-                scaleId: 'scalePercentage8',
+                scaleId: 'scalePercentage9',
                 proficiency: '45%',
-                progressBarId: 'progressBar8',
+                progressBarId: 'progressBar9',
             },
             {
                 src: 'https://img.icons8.com/?size=80&id=123603&format=png',
                 title: 'React.js',
                 comment: 'Learning and improving',
-                scaleId: 'scalePercentage9',
-                proficiency: '48%',
-                progressBarId: 'progressBar9',
+                scaleId: 'scalePercentage10',
+                proficiency: '78%',
+                progressBarId: 'progressBar10',
             },
             {
               src: 'https://img.icons8.com/?size=80&id=4PiNHtUJVbLs&format=png',
               title: 'Tailwind',
               comment: 'Learning',
-              scaleId: 'scalePercentage10',
+              scaleId: 'scalePercentage11',
               proficiency: '10%',
-              progressBarId: 'progressBar10',
-          }
+              progressBarId: 'progressBar11',
+            },
+            {
+              src: 'https://img.icons8.com/?size=80&id=jD-fJzVguBmw&format=png',
+              title: 'React-Redux',
+              comment: 'Yet to improve',
+              scaleId: 'scalePercentage12',
+              proficiency: '43%',
+              progressBarId: 'progressBar12',
+            },
+            {
+              src: 'https://img.icons8.com/?size=80&id=62452&format=png',
+              title: 'Firebase',
+              comment: 'Still needs improving',
+              scaleId: 'scalePercentage13',
+              proficiency: '41%',
+              progressBarId: 'progressBar13',
+            },
+            // {
+            //   src: 'https://img.icons8.com/?size=80&id=4PiNHtUJVbLs&format=png',
+            //   title: 'Material UI',
+            //   comment: 'Learning',
+            //   scaleId: 'scalePercentage14',
+            //   proficiency: '49%',
+            //   progressBarId: 'progressBar14',
+            // },
         ]
         stack.forEach(e =>{
             const techStack = document.createElement('div');
