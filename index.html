@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +20,23 @@
     <script src="script.js" defer></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Xoli's Portfolio</title>
 </head>
+
 <body>
     <nav>
         <input type="checkbox" id="nav-toggle">
-        <div class="logo"><a href="index.html">< X O _/ ></a></div>
+        <div class="logo"><a href="index.html">
+                < X O _/>
+            </a></div>
         <ul class="links">
             <li><a href="#" class="activeEffect"><i class="fa fa-home"></i>home</a></li>
             <li><a href="#services"><i class="fa fa-cogs"></i>services</a></li>
@@ -44,52 +53,59 @@
         <div class="index-div">
             <h1>Hello, I am Xoli Nxiweni</h1>
             <p>A <span class="effect"></span></p>
-        <p class="box"><strong><span></span></strong>I consider myself similar to a Spider, because I work as a Web Developer.</p>
-        
-        <div class="buttons">
-            <button class="btn" id="showPopup">Hire Me</button>
-            <div id="contactPopup" class="popup">
-                <div class="popup-content">
-                    <span class="close" id="closePopup">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    </span>
-                    <h2><span>Contact</span> Me</h2>
-                    <form action="https://formspree.io/f/xqkroojz" method="POST" id="myForm">
-                        <input type="text" placeholder="Name" id="nameInput" class="input" name="name" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
-                        <span id="nameError"></span>
-                        <input type="email" placeholder="Email" id="emailInput" class="input" name="email" required>
-                        <span id="emailError"></span>
-                        <textarea placeholder="Message" id="textarea" name="message" class="textarea" required></textarea>
-                        <span id="messageError"></span>
-                        <input type="text" name="_subject" value="New Contact Form Submission" hidden>
-                        <button type="submit" class="button" id="submit-btn">Submit</button>
-                      </form>
-                </div>
-            </div>
-            <a><input type="button" value="My Resume" class="btn" onclick="showModal()"></a>
+            <p class="box"><strong><span></span></strong>I consider myself similar to a Spider, because I work as a Web
+                Developer.</p>
 
-<!-- Modal -->
-<div id="resumeModal">
-    <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
+            <div class="buttons">
+                <button class="btn" id="showPopup">Hire Me</button>
+                <div id="contactPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closePopup">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </span>
+                        <h2><span>Contact</span> Me</h2>
+                        <form id="myForm">
+                            <input type="text" placeholder="Name" id="nameInput" class="input" name="name"
+                                pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
+                            <span id="nameError"></span>
+                            <input type="email" placeholder="Email" id="emailInput" class="input" name="email" required>
+                            <span id="emailError"></span>
+                            <textarea placeholder="Message" id="textarea" name="message" class="textarea"
+                                required></textarea>
+                            <span id="messageError"></span>
+                            <input type="text" name="_subject" value="New Contact Form Submission" hidden>
+                            <button type="submit" class="button" id="submit-btn">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                <a><input type="button" value="My Resume" class="btn" onclick="showModal()"></a>
+
+                <!-- Modal -->
+                <div id="resumeModal">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
         padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
         border-radius: 8px; will-change: transform;">
-        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-            src="https://www.canva.com/design/DAF2krkyXao/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-        </iframe>
-    </div>
-    <a href="https://www.canva.com/design/DAF2krkyXao/view?utm_content=DAF2krkyXao&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
-    <a><input type="button" value="Close" class="btn" onclick="closeModal()"></a>
-    <a href="Properties/files/XolileNxiweniResume.pdf" download="XolileNxiweniResume.pdf">
-        <input type="button" value="Download CV" class="btn">
-      </a>
-      
-</div>
+                        <iframe loading="lazy"
+                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                            src="https://www.canva.com/design/DAF2krkyXao/view?embed" allowfullscreen="allowfullscreen"
+                            allow="fullscreen">
+                        </iframe>
+                    </div>
+                    <a href="https://www.canva.com/design/DAF2krkyXao/view?utm_content=DAF2krkyXao&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                        target="_blank" rel="noopener"></a>
+                    <a><input type="button" value="Close" class="btn" onclick="closeModal()"></a>
+                    <a href="Properties/files/XolileNxiweniResume.pdf" download="XolileNxiweniResume.pdf">
+                        <input type="button" value="Download CV" class="btn">
+                    </a>
 
-<!-- Overlay background -->
-<div id="overlay" onclick="closeModal()"></div>
-        </div>
+                </div>
+
+                <!-- Overlay background -->
+                <div id="overlay" onclick="closeModal()"></div>
+            </div>
         </div>
         <div class="image-div">
             <img src="Properties/imgs/Build-Custom-Web-Apps.png" class="image">
@@ -104,232 +120,242 @@
             </div>
             <div class="myServicesText">
                 <div class="service-header">
-                    <h3><span><a id="click1" onclick="infoReveal('revealText1', this)" class="active">About Me</a></span></h3>
+                    <h3><span><a id="click1" onclick="infoReveal('revealText1', this)" class="active">About
+                                Me</a></span></h3>
                     <h3><span><a id="click2" onclick="infoReveal('revealText2', this)">Achievements</a></span></h3>
                     <h3><span><a id="click3" onclick="infoReveal('revealText3', this)">Services</a></span></h3>
                 </div>
                 <div class="revealText" id="revealText1">
-    <ul>
-        <li><i class='bx bxs-right-arrow-circle'></i>Passionate about innovative solutions</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Quick learner and adaptable to new technologies</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Effective problem solver and analytical thinker</li>
-    </ul>
-    <p>My professional roles include:</p>
-    <ul>
-        <li><i class='bx bxs-right-arrow-circle'></i>Software Developer (Java Programming)</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Web Developer</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>LOGO Designer</li>
-    </ul>
-    <p>Outside of work, I enjoy:</p>
-    <ul>
-        <li><i class='bx bxs-right-arrow-circle'></i>Exploring new technologies and coding projects</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Engaging in creative design activities</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Socializing and networking</li>
-    </ul>
-</div>
+                    <ul>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Passionate about innovative solutions</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Quick learner and adaptable to new technologies
+                        </li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Effective problem solver and analytical thinker
+                        </li>
+                    </ul>
+                    <p>My professional roles include:</p>
+                    <ul>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Software Developer (Java Programming)</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Web Developer</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>LOGO Designer</li>
+                    </ul>
+                    <p>Outside of work, I enjoy:</p>
+                    <ul>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Exploring new technologies and coding projects</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Engaging in creative design activities</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Socializing and networking</li>
+                    </ul>
+                </div>
 
-<div class="revealText" id="revealText2">
-    <ul>
-        <li><i class='bx bxs-right-arrow-circle'></i>OCA Java SE 8 Certificate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure Fundamentals</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure Data Fundamentals</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>CodSoft Web Development Certificate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>CodSoft Java Programming Certificate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn Web Development Certificate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn SQL Intermediate Certificate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn JavaScript Intermediate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn Java Intermediate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Coursera Wordpress Certificate</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Systems Development NQF 4</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Systems Development NQF 5 <Span class="red">(PENDING)</Span></li>
-    </ul>
-</div>
+                <div class="revealText" id="revealText2">
+                    <ul>
+                        <li><i class='bx bxs-right-arrow-circle'></i>OCA Java SE 8 Certificate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure Fundamentals</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure Data Fundamentals</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>CodSoft Web Development Certificate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>CodSoft Java Programming Certificate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn Web Development Certificate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn SQL Intermediate Certificate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn JavaScript Intermediate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Sololearn Java Intermediate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Coursera Wordpress Certificate</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Systems Development NQF 4</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Systems Development NQF 5 </li>
+                    </ul>
+                </div>
 
-<div class="revealText" id="revealText3">
-    <ul>
-        <li><i class='bx bxs-right-arrow-circle'></i>As a Java programmer, I have a passion for creating real-world solutions.</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>I'm equipped with strong frontend skills using HTML, CSS, and JavaScript.</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Additionally, I hold two Microsoft certifications for Azure cloud computing.</li>
-    </ul>
-    <p>This empowers me to provide comprehensive services encompassing:</p>
-    <ul>
-        <li><i class='bx bxs-right-arrow-circle'></i>Custom software development</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Web application development</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Cloud-based application development</li>
-        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure cloud computing consulting</li>
-    </ul>
-</div>
-
-    </div>
-</section>
-<section class="Portfolio" id="Portfolio">
-    <h1>My Portfolio</h1>
-    <div class="portfolioContainers">
-        <div class="leftContainer">
-            <h3><i class='bx bxs-graduation'></i> <br> Education</h3>
-            <ul>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span> National Senior Certificate</span></li>
-                <li><i class='bx bx-chevrons-right' ></i> <span>Lamula J.Secondary School 2011 - 2016</span></li>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span> Systems Development NQF Level 4</span></li>
-                <li><i class='bx bx-chevrons-right' ></i> <span>DynamicDNA 2022 - 2023 </span></li>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span> Systems Development NQF Level 5</span></li>
-                <li><i class='bx bx-chevrons-right' ></i> <span>DynamicDNA 2023 - 2024 </span></li>
-            </ul>
-        </div>
-        <div class="midContainer">
-            <h3><i class='bx bxs-smile'></i> <br> Soft Skills</h3>
-            <ul>
-                <li><i class='bx bxs-right-arrow-circle'></i> Adaptive</li>
-                <li><i class='bx bxs-right-arrow-circle'></i> Problem Solving</li>
-                <li><i class='bx bxs-right-arrow-circle'></i> Team Player</li>
-                <li><i class='bx bxs-right-arrow-circle'></i> Good Communication Skills</li>
-                <li><i class='bx bxs-right-arrow-circle'></i> Positive Attitude</li>
-                <li><i class='bx bxs-right-arrow-circle'></i> Time Management</li>
-            </ul>
-        </div>
-        <div class="rightContainer">
-            <h3><i class='bx bx-code-alt'></i> <br> Technical Skills</h3>
-            <ul>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span>Computer Programming</span></li>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span>Microsoft Office / Office 365</span></li>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span>Web Technologies</span></li>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span>Web based platforms version control</span></li>
-                <li><i class='bx bxs-right-arrow-circle'></i> <span>Database Management</span></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="Languages">
-        <h1>My Tech-Stack</h1>
-        <div class="LanguageContainers">
-            <!-- dynamically rendered -->
-        </div>
-    </div>
-    <div class="environments">
-        <h1>Environments</h1>
-        <div class="environmentsContainers">
-            
-            <div class="fourthContainer">
-                <img src="https://img.icons8.com/?size=80&id=y7WGoWNuIWac&format=png" alt="">
-                <h3>Visual Studio</h3>
-         
-      </div>
-            <div class="secondContainer">
-                      <img src="https://img.icons8.com/?size=80&id=61466&format=png" alt="">
-                      <h3>IntelliJ Idea</h3>
-            </div>
-            <div class="thirdContainer">
-                     <img src="https://img.icons8.com/?size=80&id=VLKafOkk3sBX&format=png" alt="">
-                      <h3>Azure Portal</h3>
+                <div class="revealText" id="revealText3">
+                    <ul>
+                        <li><i class='bx bxs-right-arrow-circle'></i>As a Java programmer, I have a passion for creating
+                            real-world solutions.</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>I'm equipped with strong frontend skills using
+                            HTML, CSS, and JavaScript.</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Additionally, I hold two Microsoft certifications
+                            for Azure cloud computing.</li>
+                    </ul>
+                    <p>This empowers me to provide comprehensive services encompassing:</p>
+                    <ul>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Custom software development</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Web application development</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Cloud-based application development</li>
+                        <li><i class='bx bxs-right-arrow-circle'></i>Microsoft Azure cloud computing consulting</li>
+                    </ul>
+                </div>
 
             </div>
-            <div class="thirdContainer">
-                     <img src="https://img.icons8.com/?size=80&id=17842&format=png" alt="">
-                      <h3>Linux</h3>
-
+    </section>
+    <section class="Portfolio" id="Portfolio">
+        <h1>My Portfolio</h1>
+        <div class="portfolioContainers">
+            <div class="leftContainer">
+                <h3><i class='bx bxs-graduation'></i> <br> Education</h3>
+                <ul>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span> National Senior Certificate</span></li>
+                    <li><i class='bx bx-chevrons-right'></i> <span>Lamula J.Secondary School 2011 - 2016</span></li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span> Systems Development NQF Level 4</span></li>
+                    <li><i class='bx bx-chevrons-right'></i> <span>DynamicDNA 2022 - 2023 </span></li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span> Systems Development NQF Level 5</span></li>
+                    <li><i class='bx bx-chevrons-right'></i> <span>DynamicDNA 2023 - 2024 </span></li>
+                </ul>
             </div>
-            <div class="fourthContainer"> 
-                <img src="https://img.icons8.com/?size=80&id=iWw83PVcBpLw&format=png" alt="">
-                <h3>Canva</h3>
-         
-      </div>
-            <!-- <div class="fourthContainer"> 
-                <img src="" alt="">
-                <h3>Node.js</h3>
-
-      </div> -->
-            <div class="fourthContainer"> 
-                <img src="https://img.icons8.com/?size=80&id=62856&format=png" alt="">
-                <h3>Github</h3>
-      </div>
-      <div class="firstContainer">
-        <img src="https://img.icons8.com/?size=80&id=9OGIyU8hrxW5&format=png" alt="">
-        <h3>Visual Studio Code</h3>
-      
-   </div>
-            <div class="fourthContainer"> 
-                <img src="https://img.icons8.com/?size=80&id=laYYF3dV0Iew&format=png" alt="">
-                <h3>Microsoft SQL Server Manager</h3>
-         
-      </div>
-            <div class="fourthContainer"> 
-                <img src="https://img.icons8.com/?size=80&id=QEQQKirln6Tf&format=png" alt="">
-                <h3>Postman API Tester</h3>
-         
-      </div>
-            <div class="fourthContainer"> 
-                <img src="https://img.icons8.com/?size=80&id=kikR2jIn6485&format=png" alt="">
-                <h3>Slack</h3>
-         
-      </div>
+            <div class="midContainer">
+                <h3><i class='bx bxs-smile'></i> <br> Soft Skills</h3>
+                <ul>
+                    <li><i class='bx bxs-right-arrow-circle'></i> Adaptive</li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> Problem Solving</li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> Team Player</li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> Good Communication Skills</li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> Positive Attitude</li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> Time Management</li>
+                </ul>
+            </div>
+            <div class="rightContainer">
+                <h3><i class='bx bx-code-alt'></i> <br> Technical Skills</h3>
+                <ul>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span>Computer Programming</span></li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span>Microsoft Office / Office 365</span></li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span>Web Technologies</span></li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span>Web based platforms version control</span></li>
+                    <li><i class='bx bxs-right-arrow-circle'></i> <span>Database Management</span></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
 
-<section class="Projects" id="Projects">
-    <h1>My Projects</h1>
-    
-    <div class="ProjectsContainer">
-        <!-- files rendered using JS -->
-    </div>
-</section>
-<footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-            <div class="logo"><a href="index.html"><h1>< X O _/ ></X></h1></a></div>
-          <!-- <p class="mb-3">
+        <div class="Languages">
+            <h1>My Tech-Stack</h1>
+            <div class="LanguageContainers">
+                <!-- dynamically rendered -->
+            </div>
+        </div>
+        <div class="environments">
+            <h1>Environments</h1>
+            <div class="environmentsContainers">
+
+                <div class="fourthContainer">
+                    <img src="https://img.icons8.com/?size=80&id=y7WGoWNuIWac&format=png" alt="">
+                    <h3>Visual Studio</h3>
+
+                </div>
+                <div class="secondContainer">
+                    <img src="https://img.icons8.com/?size=80&id=61466&format=png" alt="">
+                    <h3>IntelliJ Idea</h3>
+                </div>
+                <div class="thirdContainer">
+                    <img src="https://img.icons8.com/?size=80&id=VLKafOkk3sBX&format=png" alt="">
+                    <h3>Azure Portal</h3>
+
+                </div>
+                <div class="thirdContainer">
+                    <img src="https://img.icons8.com/?size=80&id=17842&format=png" alt="">
+                    <h3>Linux</h3>
+
+                </div>
+                <div class="fourthContainer">
+                    <img src="https://img.icons8.com/?size=80&id=iWw83PVcBpLw&format=png" alt="">
+                    <h3>Canva</h3>
+
+                </div>
+                <div class="fourthContainer">
+                    <img src="https://img.icons8.com/?size=80&id=62856&format=png" alt="">
+                    <h3>Github</h3>
+                </div>
+                <div class="firstContainer">
+                    <img src="https://img.icons8.com/?size=80&id=9OGIyU8hrxW5&format=png" alt="">
+                    <h3>Visual Studio Code</h3>
+
+                </div>
+                <div class="fourthContainer">
+                    <img src="https://img.icons8.com/?size=80&id=laYYF3dV0Iew&format=png" alt="">
+                    <h3>Microsoft SQL Server Manager</h3>
+
+                </div>
+                <div class="fourthContainer">
+                    <img src="https://img.icons8.com/?size=80&id=QEQQKirln6Tf&format=png" alt="">
+                    <h3>Postman API Tester</h3>
+
+                </div>
+                <div class="fourthContainer">
+                    <img src="https://img.icons8.com/?size=80&id=kikR2jIn6485&format=png" alt="">
+                    <h3>Slack</h3>
+                </div>
+                <div class="fourthContainer">
+                    <img src="https://img.icons8.com/?size=80&id=IpN1evivrDWO&format=png" alt="">
+                    <h3>Expo</h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Projects" id="Projects">
+        <h1>My Projects</h1>
+
+        <div class="ProjectsContainer">
+            <!-- files rendered using JS -->
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo"><a href="index.html">
+                            <h1>
+                                <X O _/>
+                            </h1>
+                        </a></div>
+                    <!-- <p class="mb-3">
             Looking forward to hearing from you in any way possible, thank you for your time!
           </p> -->
-        </div>
-  
-        <div class="col-md-4">
-          <ul class="list-unstyled">
-            <li>
-              <i class="fa fa-map-marker"></i>
-              <span>Meadowlands Soweto</span>
-            </li>
-            <li>
-              <i class="fa fa-phone"></i>
-              <a href="tel:+27 61 751 4638">Call Me</a>
-            </li>
-            <li>
-              <i class="fa fa-envelope"></i>
-              <a href="mailto:xolinxiweni@gmail.com">E-Mail Me</a>
-            </li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-          <h3 class="footer-title">Socials</h3>
-          <ul class="list-inline social-media">
+                </div>
 
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/xoli-nxiweni-a01602221/" target="_blank">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/Xoli-Nxiweni?tab=repositories" target="_blank">
-                <i class="fa fa-github"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://wa.me/0617514638" target="_blank">
-                <i class="fa fa-whatsapp"></i>
-              </a>
-            </li>
-          </ul>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <span>Meadowlands Soweto</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+27 61 751 4638">Call Me</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:xolinxiweni@gmail.com">E-Mail Me</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="footer-title">Socials</h3>
+                    <ul class="list-inline social-media">
+
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/xoli-nxiweni-a01602221/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/Xoli-Nxiweni?tab=repositories" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://wa.me/0617514638" target="_blank">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <p class="Footer-P">&copy; 2024 Personal Project. All rights reserved. | Designed by Xoli Nxiweni.</p>
-  </footer>
+        <p class="Footer-P">&copy; 2024 Personal Project. All rights reserved. | Designed by Xoli Nxiweni.</p>
+    </footer>
     <div class="scroll-upButton" id="scrollup-Btn">
-        <div class="upButton"><a href="#"><i class='bx bxs-chevron-up' ></i></a></div>
+        <div class="upButton"><a href="#"><i class='bx bxs-chevron-up'></i></a></div>
     </div>
 </body>
 <script>
-    
+
 </script>
+
 </html>

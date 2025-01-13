@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
   updateProgressBar('scalePercentage12', 'progressBar12');
   updateProgressBar('scalePercentage13', 'progressBar13');
   updateProgressBar('scalePercentage14', 'progressBar14');
+  updateProgressBar('scalePercentage15', 'progressBar15');
 });
 
 function updateProgressBar(scalePercentageId, progressBarId) {
@@ -421,14 +422,22 @@ const container = document.querySelector('.LanguageContainers');
               proficiency: '41%',
               progressBarId: 'progressBar13',
             },
-            // {
-            //   src: 'https://img.icons8.com/?size=80&id=4PiNHtUJVbLs&format=png',
-            //   title: 'Material UI',
-            //   comment: 'Learning',
-            //   scaleId: 'scalePercentage14',
-            //   proficiency: '49%',
-            //   progressBarId: 'progressBar14',
-            // },
+            {
+              src: 'https://img.icons8.com/?size=80&id=123603&format=png',
+              title: 'React Native',
+              comment: 'Learning',
+              scaleId: 'scalePercentage14',
+              proficiency: '49%',
+              progressBarId: 'progressBar14',
+            },
+            {
+              src: 'https://img.icons8.com/?size=80&id=74402&format=png',
+              title: 'MongoDB',
+              comment: 'Proficient',
+              scaleId: 'scalePercentage15',
+              proficiency: '89%',
+              progressBarId: 'progressBar15',
+            },
         ]
         stack.forEach(e =>{
             const techStack = document.createElement('div');
@@ -450,3 +459,29 @@ const container = document.querySelector('.LanguageContainers');
         let array = [0, 1, 2, 3, 4, 5];
         let result = array.filter(e => e < 3).map(e => e * 2);
         console.log(result);
+
+
+        document.querySelector('#myForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+        
+          const name = document.querySelector('#nameInput').value;
+          const email = document.querySelector('#emailInput').value;
+          const message = document.querySelector('#textarea').value;
+        
+          fetch('http://localhost:4004/send-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, message }),
+          })
+          .then(response => response.text())
+          .then(data => {
+            alert(data);
+            document.querySelector('#nameInput').value = '';
+            document.querySelector('#emailInput').value = '';
+            document.querySelector('#textarea').value = '';
+          })
+          .catch(error => console.error('Error:', error));
+        });
+        
